@@ -234,7 +234,7 @@ if (command == 'getadmin') {
 );
 
 
-bot.login('process.env.BOT_TOKEN');
+bot.login(process.env.BOT_TOKEN);
 } catch(error) {
     console.error(error)
 }
