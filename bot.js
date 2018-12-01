@@ -39,7 +39,7 @@ try {
         console.log(newLocal);
         console.log('Started up!');
         console.log('Logged in as.. ' + bot.user.tag + '! My ID is ' + bot.user.id + 'and i\'m inside ' + bot.guilds.size + ' servers!');
-        bot.user.setGame('cx!help | Currently in ' + bot.guilds.size + ' servers!');
+        bot.user.setGame('cx!help | Currently in ' + bot.guilds.size + ' servers! Made by VirtualOfficial!');
     });
     bot.on("guildMemberAdd", member => {
         member.addRole("459737519140110369");
